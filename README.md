@@ -71,7 +71,7 @@ The News Intelligence Bot monitors news sources 24/7 to predict Polymarket movem
 - RESTful API design
 
 ### AI Integration
-- Anthropic Claude (via Replit AI Integrations)
+- Anthropic Claude API (claude-sonnet-4-5)
 - Sentiment and fundamental news analysis
 - Automatic fallback to keyword-based analysis
 
@@ -103,8 +103,7 @@ The app will be available at `http://localhost:5000`
 |----------|-------------|----------|
 | `DATABASE_URL` | PostgreSQL connection string | No (uses in-memory storage) |
 | `SESSION_SECRET` | Session encryption key | Yes |
-| `AI_INTEGRATIONS_ANTHROPIC_API_KEY` | Claude API key (via Replit) | Auto-configured |
-| `AI_INTEGRATIONS_ANTHROPIC_BASE_URL` | Claude API URL (via Replit) | Auto-configured |
+| `ANTHROPIC_API_KEY` | Claude API key from Anthropic | For News Intelligence bot |
 
 ## API Endpoints
 

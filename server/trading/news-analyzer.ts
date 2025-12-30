@@ -1,9 +1,9 @@
 import type { NewsArticle, FundamentalAnalysis } from "@shared/schema";
 import Anthropic from "@anthropic-ai/sdk";
 
-// Initialize Anthropic client with Replit AI Integrations
+// Initialize Anthropic client
 const anthropic = new Anthropic({
-  apiKey: process.env.AI_INTEGRATIONS_ANTHROPIC_API_KEY,
+  apiKey: process.env.ANTHROPIC_API_KEY || process.env.AI_INTEGRATIONS_ANTHROPIC_API_KEY,
   baseURL: process.env.AI_INTEGRATIONS_ANTHROPIC_BASE_URL,
 });
 
